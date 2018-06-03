@@ -3,6 +3,7 @@ package com.jenkins.practica;
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import org.junit.Test;
 
@@ -31,7 +32,7 @@ public class OperationsTests {
 		 // Instantiate DogsOperations class
         DogsOperations dogsOperations = new DogsOperations();
         // Call getBreedList operation and store the result on ArrayList
-        List<String> breedList = dogsOperations.getBreedList();
+        List <String> breedList = dogsOperations.getBreedList();
         // Assert true if the result ArrayList has size of more than 0
         assertTrue (breedList.size()>0);
 	}
