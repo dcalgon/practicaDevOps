@@ -15,11 +15,12 @@ public class OperationsTests {
 	 */
 	@Test
 	public void testRandom() {
-		// Instantiate DogsOperations class
-		
-		// Call getRandomDogImage operation and store the result on String
-		
-		// Assert true if the result string ends with '.jpg'
+		 // Instantiate DogsOperations class
+        DogsOperations dogsOperations = new DogsOperations();
+        // Call getRandomDogImage operation and store the result on String
+        String randomImageString  = dogsOperations.getRandomDogImage();
+        // Assert true if the result string ends with '.jpg'
+        assertTrue(randomImageString.contains(".jpg"));
 	}
 	
 	/**
@@ -27,10 +28,11 @@ public class OperationsTests {
 	 */
 	@Test
 	public void breedsList() {
-		// Instantiate DogsOperations class
-		
-		// Call getBreedList operation and store the result on ArrayList
-		
-		// Assert true if the result ArrayList has size of more than 0
+		 // Instantiate DogsOperations class
+        DogsOperations dogsOperations = new DogsOperations();
+        // Call getBreedList operation and store the result on ArrayList
+        List<String> breedList = dogsOperations.getBreedList();
+        // Assert true if the result ArrayList has size of more than 0
+        assertTrue (breedList.size()>0);
 	}
 }
